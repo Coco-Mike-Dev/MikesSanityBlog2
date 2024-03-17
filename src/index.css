@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  
+  font-family: "Roboto-600",  sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @apply bg-slate-200 dark:bg-slate-800
+}
+
+ul {
+
+  list-style-type: none  ;
+}
+img {
+  max-width: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1, h2, h3 , h4, h5, h6{
+  font-family: "Oswald", sans-serif;
+  @apply text-slate-900 dark:text-black
+  
+}
+
+p {
+   @apply text-slate-600 dark:text-black text-sm leading-loose lg:text-base lg:leading-relaxed;}
+
+.main-content {
+  position: relative;
+}
+
+.main-content::before {
+  content: "";
+  border-radius: 2.8%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Change the color and opacity as needed */
+}
+.img-height{height: 75%;}
